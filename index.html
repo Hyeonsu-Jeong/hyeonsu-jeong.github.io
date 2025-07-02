@@ -3,84 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <title>Hyeonsu Jeong | CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 850px; margin: 50px auto; line-height: 1.6; color: #333; }
-        h1 { font-size: 2.2em; margin-bottom: 5px; }
-        h2 { margin-top: 40px; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
-        ul { padding-left: 20px; }
-        a { color: #1a73e8; text-decoration: underline; }
-        a:hover { text-decoration: underline; }
-        .header { display: flex; align-items: center; margin-bottom: 30px; }
-        .photo { width: 130px; height: 130px; background: #eee; margin-right: 25px; border-radius: 5px; overflow: hidden; }
-        .photo img { width: 100%; height: 100%; object-fit: cover; }
-        .indent { margin-left: 20px; }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #0b5394;
+            margin: 0;
+        }
+        h2 {
+            margin-top: 35px;
+            border-bottom: 2px solid #0b5394;
+            padding-bottom: 5px;
+            color: #0b5394;
+        }
+        a {
+            color: #1155cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .photo {
+            width: 300px;
+            height: 300px;
+            background: #ddd;
+            margin-right: 30px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header-info {
+            flex: 1;
+        }
+        .icon-links a {
+            margin-right: 12px;
+            font-size: 1.3em;
+            color: #333;
+        }
+        .icon-links a:hover {
+            color: #0b5394;
+        }
+        .tag {
+            background-color: #e1ecf4;
+            color: #0366d6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-left: 5px;
+        }
+        .pub-num {
+            margin-right: 8px;
+            font-weight: bold;
+            color: #0b5394;
+        }
+        .pub-title {
+            font-weight: bold;
+        }
+        .pub-links {
+            margin-left: 10px;
+        }
+        .pub-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .pub-item {
+            margin-bottom: 16px;
+        }
+        .pub-meta {
+            margin-left: 28px;
+            font-size: 0.95em;
+            color: #555;
+            display: block;
+            margin-top: 3px;
+        }
+        .patent-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .patent-item {
+            margin-bottom: 12px;
+        }
+        .patent-title {
+            font-weight: bold;
+        }
+        .patent-meta {
+            margin-left: 20px;
+            font-size: 0.95em;
+            color: #555;
+            display: block;
+            margin-top: 3px;
+        }
+        .flex-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            line-height: 1.6;
+        }
+        .skill-tag {
+            display: inline-block;
+            background-color: #e1ecf4;
+            color: #0366d6;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin: 5px 5px 0 0;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
-
+<div class="container">
 <div class="header">
     <div class="photo">
-        <img src="photo.jpg" alt="Hyeonsu Jeong">
+        <img src="src/profile.jpg" alt="Hyeonsu Jeong">
     </div>
-    <div>
+    <div class="header-info">
         <h1>Hyeonsu Jeong</h1>
         <p><strong>Ph.D. Candidate</strong>, School of Electrical Engineering, KAIST</p>
-        <p>Email: <a href="mailto:hsjeong1121@kaist.ac.kr" target="_blank">hsjeong1121@kaist.ac.kr</a></p>
-        <p>GitHub: <a href="https://github.com/Hyeonsu-Jeong" target="_blank">Hyeonsu-Jeong</a></p>
+        <div class="icon-links">
+            <a href="https://github.com/Hyeonsu-Jeong" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/hyeonsu-jeong-05178613b" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=MDH8D8AAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+            <a href="src/CV.pdf" target="_blank"><i class="fas fa-file-lines"></i></a>
+        </div>
+        <p>I am a Ph.D. candidate in Electrical Engineering at KAIST, conducting research on information theory, machine learning, and robust learning with a focus on data efficiency and self-distillation. Recently, I have been particularly interested in the performance gains of large language models (LLMs), especially in the context of weak-to-strong generalization.</p>
+       
+        <p>Email: hsjeong1121&ltat&gtkaist.ac.kr</p>
     </div>
 </div>
 
-<h2>Education</h2>
-<ul>
-    <li><strong>KAIST</strong>, Integrated M.S. and Ph.D. in Electrical Engineering, GPA: 4.2/4.3 (2021 – 2026 expected)<br><span class="indent">Advisor: Hye Won Chung</span></li>
-    <li><strong>KAIST</strong>, B.S. in Electrical Engineering, Cum Laude, GPA: 3.86/4.3 (2016 – 2021)</li>
-    <li><strong>Gyeonggi Science High School for the Gifted</strong> (2013 – 2016)</li>
-</ul>
-
-<h2>Research Interests</h2>
-<ul>
-    <li>Crowdsourcing and Data Efficiency</li>
-    <li>Knowledge Distillation and Self-Distillation</li>
-    <li>Robust Learning and Label Correction</li>
-    <li>Deep Learning Theory and Analysis</li>
-    <li>Probability and Statistics to Machine Learning</li>
-</ul>
-
 <h2>Publications</h2>
-<ul>
-    <li><a href="https://arxiv.org/abs/2402.10482" target="_blank">Rethinking Self-Distillation: Label Averaging and Enhanced Soft Label Refinement with Partial Labels</a><br><span class="indent">Hyeonsu Jeong, Hye Won Chung, ICLR 2025</span></li>
-    <li><a href="https://arxiv.org/abs/2301.00006" target="_blank">Recovering Top-Two Answers and Confusion Probability in Multi-Choice Crowdsourcing</a><br><span class="indent">Hyeonsu Jeong, Hye Won Chung, ICML 2023</span></li>
+<ul class="pub-list">
+    <li class="pub-item">
+        <span class="pub-num">[C2]</span>
+        <span class="pub-title">Rethinking Self-Distillation: Label Averaging and Enhanced Soft Label Refinement with Partial Labels</span>
+        <span class="pub-links">
+            <a href="https://arxiv.org/abs/2402.10482" target="_blank" class="tag">[paper]</a>
+            <a href="https://github.com/Hyeonsu-Jeong/SelfPLL" target="_blank" class="tag">[code]</a>
+            <a href="src/ICLR2025_SD_Poster_Presentation.pdf" target="_blank" class="tag">[poster]</a>
+        </span>
+        <span class="pub-meta">Hyeonsu Jeong, Hye Won Chung. International Conference on Learning Representations (ICLR), 2025.</span>
+    </li>
+    <li class="pub-item">
+        <span class="pub-num">[C1]</span>
+        <span class="pub-title">Recovering Top-Two Answers and Confusion Probability in Multi-Choice Crowdsourcing</span>
+        <span class="pub-links">
+            <a href="https://arxiv.org/abs/2301.00006" target="_blank" class="tag">[paper]</a>
+            <a href="https://github.com/Hyeonsu-Jeong/TopTwo" target="_blank" class="tag">[code]</a>
+            <a href="src/ICML2023_TopTwo_Poster.pdf" target="_blank" class="tag">[poster]</a>
+        </span>
+        <span class="pub-meta">Hyeonsu Jeong, Hye Won Chung. International Conference on Machine Learning (ICML), 2023.</span>
+    </li>
 </ul>
 
 <h2>Patents</h2>
-<ul>
-    <li><a href="https://doi.org/10.8080/1020230119967" target="_blank">Method and Device for Recovering Top-Two Answers and Confusion Probability in Multi-Choice Crowdsourcing</a><br><span class="indent">Hye Won Chung, Hyeonsu Jeong (KR 10-2023-0074573)</span></li>
-    <li><a href="https://patents.google.com/patent/WO2020111756A1/en" target="_blank">Method and Electronic Apparatus for Displaying Inspection Result of Board</a><br><span class="indent">Jong Myoung Lee, Duk Young Lee, Suhyeong Choi, Hyeonsu Jeong</span></li>
-    <li><a href="https://patents.google.com/patent/WO2020005001A1/en" target="_blank">Electronic Device and Method for Determining Cause of Mounting Defect in Components Mounted on Substrate</a><br><span class="indent">Jong Myoung Lee, Duk Young Lee, Suhyeong Choi, Hyeonsu Jeong</span></li>
+<ul class="patent-list">
+    <li class="patent-item">
+        <span class="patent-title">Recovering Top-Two Answers and Confusion Probability in Multi-Choice Crowdsourcing</span>
+        <a href="https://doi.org/10.8080/1020230119967" target="_blank" class="tag">[patent]</a>
+        <span class="patent-meta">Hyeonsu Jeong, Hye Won Chung. 2023.</span>
+    </li>
+    <li class="patent-item">
+        <span class="patent-title">Method and Electronic Apparatus for Displaying Inspection Result of Board</span>
+        <a href="https://patents.google.com/patent/WO2020111756A1/en" target="_blank" class="tag">[patent]</a>
+        <span class="patent-meta">Jong Myoung Lee, Duk Young Lee, Suhyeong Choi, Hyeonsu Jeong. 2019.</span>
+    </li>
+    <li class="patent-item">
+        <span class="patent-title">Electronic Device and Method for Determining Cause of Mounting Defect in Components Mounted on Substrate</span>
+        <a href="https://patents.google.com/patent/WO2020005001A1/en" target="_blank" class="tag">[patent]</a>
+        <span class="patent-meta">Jong Myoung Lee, Duk Young Lee, Suhyeong Choi, Hyeonsu Jeong. 2019.</span>
+    </li>
 </ul>
 
 <h2>Projects</h2>
 <ul>
-    <li>Developing Reliable Foundation Models with Theoretical Framework and Scalable Personalization (2024 – Present)</li>
-    <li>Non-invasive Near-Infrared based AI Technology for the Diagnosis of Brain Diseases (2024 – Present)</li>
-    <li>Machine learning utilizing incomplete data (2021 – 2024)</li>
-    <li>Ensuring high AI learning performance with only a small amount of training data (2022)</li>
-    <li>Value-centered big data acquisition and processing (2021)</li>
+    <li><div class="flex-item"><div>Reliable Foundation Models with Theoretical Framework and Scalable Personalization</div><div>2024 – Present</div></div></li>
+    <li><div class="flex-item"><div>Non-invasive Near-Infrared based AI Technology for Brain Disease Diagnosis</div><div>2024 – Present</div></div></li>
+    <li><div class="flex-item"><div>Machine learning utilizing incomplete data</div><div>2021 – 2024</div></div></li>
+    <li><div class="flex-item"><div>High AI learning performance with small data</div><div>2022</div></div></li>
+    <li><div class="flex-item"><div>Value-centered big data acquisition and processing</div><div>2021</div></div></li>
 </ul>
 
 <h2>Teaching Assistant</h2>
 <ul>
-    <li>Programming Structure for Electrical Engineering (35.209) – Fall 2023, Spring 2024</li>
-    <li>Probability and Introductory Random Processes (35.210) – Spring 2022, 2023; Fall 2023</li>
-    <li>Introduction to Information Theory and Coding (35.326) – Spring 2024</li>
-    <li>Information Theory (35.623) – Fall 2021, 2022, 2024</li>
+    <li><div class="flex-item"><div>Programming Structure for Electrical Engineering (35.209)</div><div>Fall 2023, Spring 2024</div></div></li>
+    <li><div class="flex-item"><div>Probability and Introductory Random Processes (35.210)</div><div>Spring 2022, 2023; Fall 2023</div></div></li>
+    <li><div class="flex-item"><div>Introduction to Information Theory and Coding (35.326)</div><div>Spring 2024</div></div></li>
+    <li><div class="flex-item"><div>Information Theory (35.623)</div><div>Fall 2021, 2022, 2024</div></div></li>
 </ul>
 
 <h2>Skills</h2>
-<ul>
-    <li>Languages: Korean (Native), English (Intermediate)</li>
-    <li>Programming: Python, LaTeX, C/C++, MATLAB</li>
-</ul>
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+    <div class="skill-tag">Python</div>
+    <div class="skill-tag">PyTorch</div>
+    <div class="skill-tag">Machine Learning</div>
+    <div class="skill-tag">Information Theory</div>
+    <div class="skill-tag">Self-Distillation</div>
+    <div class="skill-tag">Robust Learning</div>
+    <div class="skill-tag">LATEX</div>
+    <div class="skill-tag">C/C++</div>
+    <div class="skill-tag">MATLAB</div>
+</div>
 
+<div class="footer">
+    291 Daehak-ro, Yuseong-gu, Daejeon, Korea | hsjeong1121&ltat&gtkaist.ac.kr | Last updated: July 2, 2025
+</div>
+
+</div>
 </body>
 </html>
