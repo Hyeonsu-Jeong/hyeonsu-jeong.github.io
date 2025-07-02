@@ -2,77 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hyeonsu Jeong | CV & Research</title>
+    <title>Hyeonsu Jeong | CV</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; line-height: 1.6; }
-        h1, h2 { color: #333; }
+        body { font-family: Arial, sans-serif; max-width: 850px; margin: 50px auto; line-height: 1.6; color: #333; }
+        h1 { font-size: 2.2em; margin-bottom: 5px; }
+        h2 { margin-top: 40px; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+        ul { padding-left: 20px; }
         a { color: #1a73e8; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .section { margin-top: 40px; }
+        .header { display: flex; align-items: center; margin-bottom: 30px; }
+        .photo { width: 130px; height: 130px; background: #eee; margin-right: 25px; border-radius: 5px; overflow: hidden; }
+        .photo img { width: 100%; height: 100%; object-fit: cover; }
+        .contact p { margin: 3px 0; }
+        .indent { margin-left: 20px; }
     </style>
 </head>
 <body>
 
-    <h1>Hyeonsu Jeong</h1>
-    <p>Ph.D. Candidate, <strong>School of Electrical Engineering, KAIST</strong></p>
-    <p>Email: <a href="mailto:hsjeong1121@kaist.ac.kr">hsjeong1121@kaist.ac.kr</a></p>
-    <p>GitHub: <a href="https://github.com/Hyeonsu-Jeong" target="_blank">Hyeonsu-Jeong</a></p>
-
-    <div class="section">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Crowdsourcing and Data Efficiency</li>
-            <li>Knowledge Distillation and Self-Distillation</li>
-            <li>Robust Learning and Label Correction</li>
-            <li>Deep Learning Theory and Analysis</li>
-            <li>Probability and Statistics to Machine Learning</li>
-        </ul>
+<div class="header">
+    <div class="photo">
+        <img src="photo.jpg" alt="Hyeonsu Jeong">
     </div>
-
-    <div class="section">
-        <h2>Publications</h2>
-        <ul>
-            <li><strong>Rethinking Self-Distillation:</strong> Label Averaging and Enhanced Soft Label Refinement with Partial Labels, ICLR 2025</li>
-            <li><strong>Recovering Top-Two Answers and Confusion Probability in Multi-Choice Crowdsourcing</strong>, ICML 2023</li>
-        </ul>
+    <div>
+        <h1>Hyeonsu Jeong</h1>
+        <p><strong>Ph.D. Candidate</strong>, School of Electrical Engineering, KAIST</p>
+        <p>Email: <a href="mailto:hsjeong1121@kaist.ac.kr">hsjeong1121@kaist.ac.kr</a></p>
+        <p>GitHub: <a href="https://github.com/Hyeonsu-Jeong" target="_blank">Hyeonsu-Jeong</a></p>
     </div>
+</div>
 
-    <div class="section">
-        <h2>Patents</h2>
-        <ul>
-            <li>Recovering Top-Two Answers and Confusion Probability in Multi-Choice Crowdsourcing (KR 10-2023-0074573)</li>
-            <li>Displaying Inspection Result of Board (KR 10-2019-0153629, US 16/624,619, CN 201980003048.9, EP 19817118.3)</li>
-            <li>Determining Cause of Mounting Defect (KR 10-2019-0077004, US 16/621,142, CN 201980002555.0, EP 19812895.1)</li>
-        </ul>
-    </div>
+<h2>Education</h2>
+<ul>
+    <li><strong>KAIST</strong>, Integrated M.S. and Ph.D. in Electrical Engineering, GPA: 4.2/4.3 (2021 – 2026 expected)<br class="indent">Advisor: Hye Won Chung</li>
+    <li><strong>KAIST</strong>, B.S. in Electrical Engineering, Cum Laude, GPA: 3.86/4.3 (2016 – 2021)</li>
+    <li><strong>Gyeonggi Science High School for the Gifted</strong> (2013 – 2016)</li>
+</ul>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li>Reliable Foundation Models (2024–Present)</li>
-            <li>AI for Brain Disease Diagnosis (2024–Present)</li>
-            <li>Machine Learning with Incomplete Data (2021–2024)</li>
-            <li>Small Data AI Learning (2022)</li>
-            <li>Value-Centered Big Data Processing (2021)</li>
-        </ul>
-    </div>
+<h2>Research Interests</h2>
+<ul>
+    <li>Crowdsourcing and Data Efficiency</li>
+    <li>Knowledge Distillation and Self-Distillation</li>
+    <li>Robust Learning and Label Correction</li>
+    <li>Deep Learning Theory and Analysis</li>
+    <li>Probability and Statistics to Machine Learning</li>
+</ul>
 
-    <div class="section">
-        <h2>Education</h2>
-        <ul>
-            <li>KAIST, Integrated M.S. & Ph.D. in Electrical Engineering, GPA 4.2/4.3 (2021–2026 expected)</li>
-            <li>KAIST, B.S. in Electrical Engineering, Cum Laude, GPA 3.86/4.3 (2016–2021)</li>
-            <li>Gyeonggi Science High School for the Gifted (2013–2016)</li>
-        </ul>
-    </div>
+<h2>Publications</h2>
+<ul>
+    <li><a href="https://arxiv.org/abs/2402.10482" target="_blank">Rethinking Self-Distillation: Label Averaging and Enhanced Soft Label Refinement with Partial Labels</a><br class="indent">Hyeonsu Jeong, Hye Won Chung, ICLR 2025</li>
+    <li><a href="https://arxiv.org/abs/2301.00006" target="_blank">Recovering Top-Two Answers and Confusion Probability in Multi-Choice Crowdsourcing</a><br class="indent">Hyeonsu Jeong, Hye Won Chung, ICML 2023</li>
+</ul>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: Korean (Native), English (Intermediate)</li>
-            <li>Coding: Python, LaTeX, C/C++, MATLAB</li>
-        </ul>
-    </div>
+<h2>Patents</h2>
+<ul>
+    <li><a href="https://doi.org/10.8080/1020230119967" target="_blank">Method and Device for Recovering Top-Two Answers and Confusion Probability in Multi-Choice Crowdsourcing</a><br class="indent">Hye Won Chung, Hyeonsu Jeong (KR 10-2023-0074573)</li>
+    <li><a href="https://patents.google.com/patent/WO2020111756A1/en" target="_blank">Method and Electronic Apparatus for Displaying Inspection Result of Board</a><br class="indent">Jong Myoung Lee, Duk Young Lee, Suhyeong Choi, Hyeonsu Jeong</li>
+    <li><a href="https://patents.google.com/patent/WO2020005001A1/en" target="_blank">Electronic Device and Method for Determining Cause of Mounting Defect in Components Mounted on Substrate</a><br class="indent">Jong Myoung Lee, Duk Young Lee, Suhyeong Choi, Hyeonsu Jeong</li>
+</ul>
+
+<h2>Projects</h2>
+<ul>
+    <li>Developing Reliable Foundation Models with Theoretical Framework and Scalable Personalization (2024 – Present)</li>
+    <li>Non-invasive Near-Infrared based AI Technology for the Diagnosis of Brain Diseases (2024 – Present)</li>
+    <li>Machine learning utilizing incomplete data (2021 – 2024)</li>
+    <li>Ensuring high AI learning performance with only a small amount of training data (2022)</li>
+    <li>Value-centered big data acquisition and processing (2021)</li>
+</ul>
+
+<h2>Teaching Assistant</h2>
+<ul>
+    <li>Programming Structure for Electrical Engineering (35.209) – Fall 2023, Spring 2024</li>
+    <li>Probability and Introductory Random Processes (35.210) – Spring 2022, 2023; Fall 2023</li>
+    <li>Introduction to Information Theory and Coding (35.326) – Spring 2024</li>
+    <li>Information Theory (35.623) – Fall 2021, 2022, 2024</li>
+</ul>
+
+<h2>Skills</h2>
+<ul>
+    <li>Languages: Korean (Native), English (Intermediate)</li>
+    <li>Programming: Python, LaTeX, C/C++, MATLAB</li>
+</ul>
 
 </body>
 </html>
